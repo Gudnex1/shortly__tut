@@ -41,6 +41,7 @@
     --color-cyan: hsl(180, 66%, 49%);
     --color-cyanlight: hsl(180, 66%, 69%);
     --color-darkviolet: hsl(257, 27%, 26%);
+    --color-red: hsl(0, 87%, 67%);
     --color-grayishviolet: hsl(257, 7%, 63%);
     --color-verydarkblue: hsl(255, 11%, 22%);
   }
@@ -215,6 +216,12 @@
   .top-24 {
     top: calc(var(--spacing) * 24);
   }
+  .bottom-3 {
+    bottom: calc(var(--spacing) * 3);
+  }
+  .left-7 {
+    left: calc(var(--spacing) * 7);
+  }
   .left-16 {
     left: calc(var(--spacing) * 16);
   }
@@ -250,6 +257,9 @@
   }
   .-mt-20 {
     margin-top: calc(var(--spacing) * -20);
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
@@ -466,6 +476,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-red {
+    border-color: var(--color-red);
+  }
   .\!bg-darkviolet {
     background-color: var(--color-darkviolet) !important;
   }
@@ -489,6 +502,9 @@
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
@@ -582,8 +598,14 @@
   .text-grayishviolet {
     color: var(--color-grayishviolet);
   }
+  .text-red {
+    color: var(--color-red);
+  }
   .capitalize {
     text-transform: capitalize;
+  }
+  .italic {
+    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;

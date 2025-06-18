@@ -15,3 +15,9 @@
 .btn2 {
     @apply rounded bg-cyan text-white font-medium hover:bg-cyanlight py-2 px-7 cursor-pointer text-sm
 }
+
+#CTA {
+    background-image: url('../dist/images/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

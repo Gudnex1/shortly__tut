@@ -34,8 +34,6 @@
     --font-weight-bold: 700;
     --tracking-tight: -0.025em;
     --radius-lg: 0.5rem;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-cyan: hsl(180, 66%, 49%);
@@ -205,29 +203,14 @@
   .-top-10 {
     top: calc(var(--spacing) * -10);
   }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
-  .top-15 {
-    top: calc(var(--spacing) * 15);
-  }
   .top-20 {
     top: calc(var(--spacing) * 20);
   }
   .top-24 {
     top: calc(var(--spacing) * 24);
   }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
-  }
   .right-6 {
     right: calc(var(--spacing) * 6);
-  }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
   }
   .left-6 {
     left: calc(var(--spacing) * 6);
@@ -318,12 +301,6 @@
   }
   .flex-1 {
     flex: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -436,9 +413,6 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
-  .bg-grayishviolet {
-    background-color: var(--color-grayishviolet);
-  }
   .bg-verydarkblue {
     background-color: var(--color-verydarkblue);
   }
@@ -484,8 +458,8 @@
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
   }
-  .pt-0 {
-    padding-top: calc(var(--spacing) * 0);
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
@@ -559,32 +533,14 @@
   .italic {
     font-style: italic;
   }
-  .font-stretch-100\% {
-    font-stretch: 100%;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
   .placeholder-yellow-500 {
     &::placeholder {
       color: var(--color-yellow-500);
     }
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .duration-200 {
     --tw-duration: 200ms;
     transition-duration: 200ms;
-  }
-  .duration-300 {
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
-  }
-  .duration-1000 {
-    --tw-duration: 1000ms;
-    transition-duration: 1000ms;
   }
   .group-hover\:text-black {
     &:is(:where(.group):hover *) {
@@ -830,7 +786,7 @@
   }
 }
 #CTA {
-  background-image: url("/images/bg-boost-desktop.svg");
+  background-image: url('../dist/images/bg-boost-desktop.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -874,26 +830,6 @@
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -921,7 +857,7 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-duration {
+@property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -944,17 +880,11 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-outline-style: solid;
       --tw-translate-x: 0;

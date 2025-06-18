@@ -14,7 +14,7 @@
 <body>
     <nav class="container mx-auto p-6">
         <!-- nav cont -->
-        <div class=" justify-between items-center text-grayishviolet md:flex">
+        <div class=" justify-between items-center text-grayishviolet flex">
             <!-- link1 -->
             <div class="flex space-x-20">
                 <div>
@@ -42,6 +42,22 @@
                     <a href="#" class="group-hover:text-black duration-200">Login</a>
                 </div>
                 <button class="btn">Sign up</button>
+            </div>
+            <!-- hamburger -->
+            <button id="menu-btn" class="block hamburger md:hidden" type="button">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- mobile menu -->
+        <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkviolet right-6 left-6 top-20 z-100">
+            <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white text-center">
+                <a href="#" class="w-full text-center">Features</a>
+                <a href="#" class="w-full text-center">Pricing</a>
+                <a href="#" class="w-full text-center">Resources</a>
+                <a href="#" class="w-full pt-5 border-t border-gray-400 text-center">Login</a>
+                <a href="#" class="w-full text-center py-3 rounded-full bg-cyan">Sign Up</a>
             </div>
         </div>
     </nav>
@@ -275,7 +291,7 @@
                     <img src="images/icon-pinterest.svg" alt="" class="ficon" />
                 </a>
                 <a href="#">
-                    <img src="images/icon-instagram.svg" alt="" class="ficon" /> 
+                    <img src="images/icon-instagram.svg" alt="" class="ficon" />
                 </a>
             </div>
 

@@ -9,15 +9,20 @@
   --color-verydarkviolet: hsl(260, 8%, 14%);
 }
 .btn {
-    @apply rounded-full bg-cyan text-white font-medium hover:bg-cyanlight py-2 px-7 cursor-pointer text-lg
+  @apply rounded-full bg-cyan text-white font-medium hover:bg-cyanlight py-2 px-7 cursor-pointer text-lg;
 }
-    
+
 .btn2 {
-    @apply rounded bg-cyan text-white font-medium hover:bg-cyanlight py-2 px-7 cursor-pointer text-sm
+  @apply rounded bg-cyan text-white font-medium hover:bg-cyanlight py-2 px-7 cursor-pointer text-sm;
 }
 
 #CTA {
-    background-image: url('../dist/images/bg-boost-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("./images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ficon:hover {
+  filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg)
+    brightness(89%) contrast(85%);
 }
